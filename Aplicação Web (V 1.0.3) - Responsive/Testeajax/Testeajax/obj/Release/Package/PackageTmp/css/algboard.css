@@ -1,0 +1,975 @@
+﻿html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    background: url(../img/background.png) repeat;
+}
+
+header{
+    width: 85%;
+    height: 7%;
+    position: relative;
+    left: 15%;
+    background-color: #eee;
+}
+
+section{
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 15%;
+    height: 100%;
+    background-color: #272c33;
+    position: relative;
+    bottom: 7%;
+}
+
+ul{
+    margin: 0;
+}
+
+.listaMenu{
+    position: relative;
+    top: 25%;
+    border-top: 1px inset white;
+}
+
+li {
+    list-style-type: none;
+    padding-top: 15px
+}
+
+a {
+    text-decoration: none;
+    color: #f1f2f7 !important;
+}
+
+a:hover{
+    opacity: 0.6;
+}
+
+.titleMenulista{
+    font-size: 15px;
+    font-family: 'Abel';
+}
+
+.iconMenulista{
+    width: 15px;
+    margin-right: 30px;
+}
+
+.titleSidebar{
+    font-size: 16px;
+    font-family: 'Abel';
+    position: relative;
+    color: #fff;
+    top: 170px;
+    left: 15px;
+    opacity: 0.7
+}
+
+.divisoria {
+    width: 86%;
+    height: 5%;
+    background-color: #272c33;
+    position: absolute;
+    top: 9%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+}
+
+.userIcon{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 25px;
+}
+
+.userEmail{
+    position: relative;
+    color: #fff;
+    font-family: 'Abel';
+    left: 30px;
+    top: -5px;
+}
+
+
+
+#btnLogout {
+    border: 0;
+    padding: 0;
+    background: none;
+    color: #fff;
+    font-family: 'Abel';
+    position: relative;
+    left: 60%;
+    bottom: 7px;
+    cursor: pointer;
+}
+
+.logoutIcon {
+    width: 30px;
+    position: relative;
+    left: 60%;
+    top: 2px;
+}
+
+
+.content1 {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 35%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #eee;
+}
+
+.titleContent1 {
+    width: 100%;
+    height: 15%;
+    position: relative;
+    background-color: #AA3939;
+}
+
+.titleContent1span{
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+    position: relative;
+    top: -2px;
+    left: 100px;
+}
+
+.iconContent1{
+    width: 30px;
+    position: relative;
+    top: 6px;
+    left: 10px
+}
+
+#chartdiv{
+    position: relative;
+    width: 100%;
+    height: 84%;
+}
+
+.content2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 35%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #eee;
+}
+
+.titleContent2{
+    width: 100%;
+    height: 15%;
+    position: relative;
+    background-color: #AA3939;
+}
+
+.titleContent2span{
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+    position: relative;
+    top: -2px;
+    left: 100px;
+}
+
+.iconTempreal{
+    width: 30px;
+    position: relative;
+    top: 40px;
+    left: 15px
+}
+
+#lTemp{
+    font-size: 20px;
+    font-family: 'Open Sans';
+    position: relative;
+    left: 135px;
+    bottom: 10px;
+}
+
+.iconChip {
+    width: 30px;
+    position: relative;
+    top: 10px;
+    left: 13px
+}
+
+#qntdSensor {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    position: relative;
+    left: 145px;
+    bottom: 43px
+}
+
+.iconLocal {
+    width: 30px;
+    position: relative;
+    bottom: 20px;
+    left: 13px
+}
+
+#local {
+    font-size: 20px;
+    font-family: 'Open Sans';
+    position: relative;
+    left: 100px;
+    bottom: 70px
+}
+
+.analytics{
+    width: 912px;
+    height: 20%;
+    position: absolute;
+    top: 75%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
+
+.divTemp{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    float: left;
+    border: 1px solid #eee;
+}
+
+.iconAnalytics{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 60px;
+    top: 15px;
+    border-bottom: 1px solid black;
+}
+
+.lblTemp{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
+
+.lblTemp1{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    left: 25px;
+}
+
+#lBaixa{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+    right: 15px;
+}
+
+#lQuartilUm{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+    right: 25px;
+}
+
+#lMediana{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+    right: 25px;
+}
+
+#lMedia{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+    right: 10px;
+}
+
+#lQuartilTres{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+    right: 25px;
+}
+
+#lAlta{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+    right: 20px;
+}
+
+.formulario{
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    border: 1px solid #eee;
+}
+
+h1{
+    color: orange;
+    font-family: 'Abel';
+    font-size: 50px
+}
+
+.enviarNome {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.enviarEmail {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.enviarAssunto {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.enviarMensagem {
+    background: none;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+#btnenviar {
+    background: none;
+    border: 1px solid #eee;
+    height: 50px;
+    width: 170px;
+    background-color: #AA3C39;
+    color: #fff;
+    font-family: 'Open Sans';
+    cursor: pointer;
+}
+
+.relatorio{
+    width: 700px;
+    height: 350px;
+    background-color: #eee;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.titleRelatorio{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    position: relative;
+}
+
+.buscaData{
+    width: 100%;
+    height: 85%;
+    overflow: auto;
+}
+
+table{
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+
+td{
+    margin-top: 0px;
+    font-family: 'Abel';
+    transition: ease-in .4s;
+}
+
+th{
+    margin-top: 0px;
+    font-family: 'Abel'
+}
+
+#dataBuscar{
+    position: relative;
+    top: -10px;
+    border-radius: 2px;
+    left: 47%;
+}
+
+#btnBuscartemp{
+    width: 40px;
+    position: relative;
+    top: 0px;
+    left: 50%;
+}
+
+.buscadataImage{
+    width: 40px;
+    position: relative;
+    left: 5%;
+    top: 5px
+}
+
+.titleRelatoriobuscadata{
+    font-family: 'Abel';
+    color: #fff;
+    position: relative;
+    left: 8%;
+    bottom: 5px;
+    font-size: 25px
+
+}
+
+.desvioPadrao{
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top: 92%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #eee;
+}
+
+.desviopadraoImage{
+    width: 30px;
+    position: relative;
+    top: 15px
+}
+
+.titleDesvioPadrao{
+    color: #000;
+    font-family: sans-serif;
+    position: relative;
+    bottom: 10px;
+    left: 25px;
+    font-weight: bold;
+}
+
+#devPadrao{
+    color: #000;
+    font-family: sans-serif;
+    position: relative;
+    bottom: 15px;
+    font-weight: bold;
+    left: 60px;
+    font-size: 14px
+}
+
+@media screen and (max-width: 1200px) {
+
+    .relatorio{
+        left: 60%;
+    }
+
+    .iconMenulista{
+        margin-right: 15px;
+    }
+
+    .content1{
+        width: 44%;
+        left: 40%;
+    }
+
+    .content2{
+        left: 80%;
+    }
+
+    .analytics{
+        width: 700px;
+        height: 100px;
+        left: 57%;
+    }
+
+    .divTemp{
+        float: none;
+        display: inline-flex;
+        width: 110px;
+    }
+    
+    .iconAnalytics{
+        top: 2px;
+        left: 40px;
+    }
+
+    .lblTemp{
+        top: 35px;
+        left: 2px;
+    }
+
+    .lblTemp1{
+        top: 35px;
+        left: 5px;
+    }
+
+    #lBaixa{
+        top: 45px;
+        left: -33px
+    }
+
+    #lQuartilUm{
+        top: 45px;
+        left: -45px;
+    }
+
+    #lMediana{
+        top: 45px;
+        left: -45px;
+    }
+
+    #lMedia{
+        top: 45px;
+        left: -28px;
+    }
+
+    #lQuartilTres{
+        top: 45px;
+        left: -45px;
+    }
+
+    #lAlta{
+        top: 45px;
+        left: -35px;
+    }
+
+    .divisoria{
+        width: 90%;
+    }
+
+    .formulario{
+        left: 60%;
+    }
+}
+
+
+
+    @media screen and (max-width: 980px) {
+
+        .sidebar {
+            width: 20%;
+        }
+
+        .relatorio{
+            left: 60%;
+            width: 70%;
+        }
+
+        #dataBuscar{
+            left: 35%;
+        }
+
+        #btnBuscartemp{
+            left: 35%;
+        }
+
+        .content1 {
+            width: 40%;
+            left: 42%;
+        }
+
+        .titleContent1span {
+            left: 20%;
+        }
+
+        .content2 {
+            width: 30%;
+            left: 82%;
+        }
+
+        .titleContent2span {
+            left: 25%;
+        }
+
+        #chartdiv {
+            width: 300px
+        }
+
+        #btnLogout {
+            left: 40%;
+        }
+
+        .logoutIcon {
+            left: 40%;
+        }
+
+        .iconMenulista {
+            margin-right: 10px;
+        }
+
+        .analytics {
+            width: 500px;
+            left: 60%;
+            height: 70px;
+        }
+
+        .divTemp {
+            width: 77px;
+            height: 70px;
+            float: none;
+            display: inline-flex;
+        }
+
+        #lTemp {
+            left: 50%;
+        }
+
+        #qntdSensor {
+            left: 55%;
+        }
+
+        #local {
+            left: 33%;
+        }
+
+        .desvioPadrao {
+            left: 60%;
+        }
+
+        .userEmail {
+            left: 10%;
+        }
+
+        .userIcon {
+            left: 8%;
+        }
+
+        .iconAnalytics {
+            top: -20px;
+            left: 25px;
+        }
+
+        .lblTemp {
+            top: 15px;
+            left: -16px
+        }
+
+        .lblTemp1 {
+            top: 15px;
+            left: -9px;
+        }
+
+        #lBaixa {
+            font-size: 12px;
+            top: 25px;
+            left: -44px;
+        }
+
+        #lQuartilUm {
+            top: 25px;
+            font-size: 12px;
+            left: -55px;
+        }
+
+        #lMediana {
+            top: 25px;
+            font-size: 12px;
+            left: -55px;
+        }
+
+        #lMedia {
+            top: 25px;
+            font-size: 12px;
+            left: -40px;
+        }
+
+        #lQuartilTres {
+            top: 25px;
+            font-size: 12px;
+            left: -55px;
+        }
+
+        #lAlta {
+            font-size: 12px;
+            top: 25px;
+            left: -48px;
+        }
+
+        .formulario{
+            width: 70%;
+            left: 60%;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+
+        .content1 {
+            left: 39%;
+            width: 50%;
+        }
+
+        .analytics {
+            left: 56%;
+        }
+
+        .divisoria {
+            left: 55%;
+            width: 100%;
+        }
+
+        header {
+            left: 10%;
+            width: 100%;
+        }
+
+        #local {
+            font-size: 16px;
+            top: -65px;
+        }
+
+        .sidebar {
+            width: 13%;
+        }
+
+        .iconMenulista {
+            width: 30px;
+            position: relative;
+            right: 10px;
+        }
+
+        .listaMenu {
+            border: none;
+        }
+
+        .titleSidebar {
+            visibility: hidden;
+        }
+
+        .titleMenulista {
+            visibility: hidden;
+        }
+
+        .formulario{
+            width: 50%;
+            left: 60%;
+        }
+
+        .relatorio {
+            left: 60%;
+            width: 70%;
+        }
+
+        #dataBuscar {
+            left: 15%;
+        }
+
+        #btnBuscartemp {
+            left: 15%;
+        }
+    }
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+    
+    body{
+        position: fixed;
+        overflow: hidden;
+    }
+
+    .divisoria{
+        visibility: hidden;
+    }
+
+    .sidebar{
+        position: fixed;
+    }
+
+    .content1{
+        top: 25%;
+        width: 70%;
+        left: 55%;
+    }
+
+    .listaMenu{
+        top: 15%;
+    }
+
+    .content2{
+        top: 70%;
+        left: 55%;
+        width: 70%;
+    }
+
+    .sidebar{
+        height: 100%;
+    }
+
+    .iconMenulista{
+        left: -27px;
+    }
+
+    .analytics{
+        visibility: hidden;
+    }
+
+    header{
+        visibility: hidden;
+    }
+
+    .desvioPadrao{
+        visibility: hidden;
+    }
+
+    #local{
+        left: 110px;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        position: fixed;
+        overflow: hidden;
+    }
+
+    .divisoria {
+        visibility: hidden;
+    }
+
+    .sidebar {
+        position: fixed;
+    }
+
+    .content1 {
+        top: 25%;
+        width: 70%;
+        left: 55%;
+    }
+
+    .listaMenu {
+        top: 15%;
+    }
+
+    .content2 {
+        top: 70%;
+        left: 55%;
+        width: 70%;
+    }
+
+    .sidebar {
+        height: 100%;
+        top: 0%;
+    }
+
+    .iconMenulista {
+        left: -29px;
+    }
+
+    .analytics {
+        visibility: hidden;
+    }
+
+    header {
+        visibility: hidden;
+    }
+
+    .desvioPadrao {
+        visibility: hidden;
+    }
+
+    #local{
+        left: 100px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        position: fixed;
+        overflow: hidden;
+    }
+
+    .divisoria {
+        visibility: hidden;
+    }
+
+    .sidebar {
+        position: fixed;
+    }
+
+    .content1 {
+        top: 25%;
+        width: 70%;
+        height: 250px;
+        left: 55%;
+    }
+
+    #chartdiv{
+        width: 220px;
+    }
+
+    .listaMenu {
+        top: 15%;
+    }
+
+    .content2 {
+        top: 75%;
+        left: 55%;
+        width: 70%;
+        height: 250px;
+    }
+
+    .sidebar {
+        height: 100%;
+        top: 0%;
+    }
+
+    .iconMenulista {
+        right: 33px;
+    }
+
+    .analytics {
+        visibility: hidden;
+    }
+
+    header {
+        visibility: hidden;
+    }
+
+    .desvioPadrao {
+        visibility: hidden;
+    }
+
+    .iconLocal{
+        top: -25px;
+    }
+}
+

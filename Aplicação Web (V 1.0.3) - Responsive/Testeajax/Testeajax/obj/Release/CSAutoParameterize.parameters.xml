@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="dbprojetoConnectionString-Web.config Connection String" description="dbprojetoConnectionString A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="Data Source=projeto321.database.windows.net;Initial Catalog=dbprojeto;User ID=projeto321;Password=Faculdadebandtec2018" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\DeepWeb\\Desktop\\Aplicação\ Web\ \(v3\)\ DESV\ PADRAO\\Aplicação\ Web\ \(v2\ -\ Estilizada\)\\Testeajax\\Testeajax\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='dbprojetoConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
